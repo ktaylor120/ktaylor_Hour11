@@ -8,7 +8,9 @@ public class PrefabGenerator : MonoBehaviour
 
     private void Start()
     {
-        Instantiate(prefab, new Vector3(1, 1, 1), Quaternion.identity);
+        for (var i = 0; i < 10; i++)
+        Instantiate(prefab, new Vector3(i * 2.0f, 0, 0), Quaternion.identity);
+
     }
     void Update()
     {
